@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mOU-Ds-hpA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--お散歩-->
+        <scene sceneID="1rK-yT-bho">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Jco-ru-c9a" customClass="WalkViewController" customModule="PetPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xi-3n-erz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YmO-81-Lbx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="お散歩" id="Mzn-qm-7I8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rc2-t7-WfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="442"/>
+        </scene>
+        <!--カレンダー-->
+        <scene sceneID="uYa-u8-Z0E">
+            <objects>
+                <viewController id="4h9-yJ-OZq" customClass="CalendarViewController" customModule="PetPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qM1-nT-aa5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="59l-AI-Mm7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="カレンダー" id="ena-yG-xX9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIq-zf-h7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="441"/>
+        </scene>
+        <!--アルバム-->
+        <scene sceneID="Ayp-bC-eaS">
+            <objects>
+                <viewController id="Qz9-Db-Tcl" customClass="AlbumViewController" customModule="PetPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59K-A0-wdz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="E8p-5d-UTm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="アルバム" id="NJS-Mw-OKx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igR-NA-ExZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="-287"/>
+        </scene>
+        <!--ごはん-->
+        <scene sceneID="b2k-6i-ZTF">
+            <objects>
+                <viewController id="iSX-sN-8ct" customClass="FoodViewController" customModule="PetPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWM-oG-bHt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YwA-4j-lp9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ごはん" id="SRd-wy-Kfp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUH-y2-axP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="-286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qw7-wo-y16">
+            <objects>
+                <viewController id="7nc-Jz-dUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E1t-zV-0oa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-Q6-6p4">
+                                <rect key="frame" x="70" y="245" width="245" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="新規ペット登録"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ7-J7-fgn">
+                                <rect key="frame" x="70" y="348" width="245" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="新規ペット登録"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MXt-vj-ReV"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="759-uL-V7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1311" y="63"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lb5-jy-0gZ">
+            <objects>
+                <tabBarController id="mOU-Ds-hpA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tQr-fH-hFE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.92003184559999995" green="0.62002983420000002" blue="0.73186171580000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.92003184559999995" green="0.62002983420000002" blue="0.73186171580000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iSX-sN-8ct" kind="relationship" relationship="viewControllers" id="UXu-sb-zO3"/>
+                        <segue destination="Jco-ru-c9a" kind="relationship" relationship="viewControllers" id="HzF-js-YWu"/>
+                        <segue destination="Qz9-Db-Tcl" kind="relationship" relationship="viewControllers" id="dff-yK-xtf"/>
+                        <segue destination="4h9-yJ-OZq" kind="relationship" relationship="viewControllers" id="gzg-rY-MfR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMv-cE-IeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="64"/>
         </scene>
     </scenes>
 </document>
