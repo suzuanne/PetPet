@@ -16,6 +16,7 @@
 		AB2B18D921C0E6F3001B1673 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */; };
 		AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */; };
 		AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */; };
+		ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF09E9C21CB652E00223B49 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 		AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		ABF09E9C21CB652E00223B49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B25A64D2D1B23643BEC3A3EE /* Pods-PetPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetPet/Pods-PetPet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */,
 				AB2B18CB21C0E42A001B1673 /* Assets.xcassets */,
 				AB2B18CD21C0E42A001B1673 /* LaunchScreen.storyboard */,
+				ABF09E9C21CB652E00223B49 /* LoginViewController.swift */,
 				AB2B18D021C0E42A001B1673 /* Info.plist */,
 			);
 			path = PetPet;
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */,
 				AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */,
 				AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */,
 				AB2B18D721C0E6C5001B1673 /* FoodViewController.swift in Sources */,
