@@ -64,14 +64,48 @@
                     <view key="view" contentMode="scaleToFill" id="NWM-oG-bHt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4h-Ab-ipd">
+                                <rect key="frame" x="121" y="322" width="133" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.8852526825453928" blue="0.1131963372054301" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="ごはん">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayClock" destination="iSX-sN-8ct" eventType="touchUpInside" id="AHn-lF-6iB"/>
+                                    <action selector="loadData" destination="iSX-sN-8ct" eventType="touchUpInside" id="rQv-rE-kbC"/>
+                                    <action selector="save" destination="iSX-sN-8ct" eventType="touchUpInside" id="tsj-I4-ZWf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgN-eu-8Uw">
+                                <rect key="frame" x="75" y="435" width="225" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6y-77-ICY">
+                                <rect key="frame" x="16" y="54" width="343" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YwA-4j-lp9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ごはん" id="SRd-wy-Kfp"/>
+                    <connections>
+                        <outlet property="labelClock" destination="RgN-eu-8Uw" id="pSg-le-4fd"/>
+                        <outlet property="labelDate" destination="u6y-77-ICY" id="mBh-P3-2MN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUH-y2-axP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="-286"/>
+            <point key="canvasLocation" x="1149.5999999999999" y="-286.50674662668666"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Qw7-wo-y16">
@@ -89,12 +123,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ7-J7-fgn">
                                 <rect key="frame" x="70" y="348" width="245" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="新規ペット登録"/>
+                                <state key="normal" title="キーでログイン"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MXt-vj-ReV"/>
                     </view>
+                    <connections>
+                        <outlet property="username" destination="TQ7-J7-fgn" id="iYZ-zf-Uf8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="759-uL-V7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
