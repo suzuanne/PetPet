@@ -62,11 +62,12 @@ class FoodViewController: UIViewController {
                 print("error")
             }else {
                 print("success")
+                self.loadData()
             }
         })
     }
     
-    @IBAction func loadData(){
+    func loadData(){
         let query = NCMBQuery(className: "food")
         query?.findObjectsInBackground({ (result, error) in
             if error != nil {
