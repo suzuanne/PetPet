@@ -57,6 +57,48 @@
             </objects>
             <point key="canvasLocation" x="1990" y="-287"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="CpA-SH-cgj">
+            <objects>
+                <viewController id="0iD-V1-NIR" customClass="ProfileViewController" customModule="PetPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gDx-nP-iaO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t02-QR-q5D">
+                                <rect key="frame" x="71" y="318" width="233" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="アルバムから選択"/>
+                                <connections>
+                                    <action selector="choosePicture" destination="0iD-V1-NIR" eventType="touchUpInside" id="Tts-fL-Evt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHd-VT-AFg">
+                                <rect key="frame" x="16" y="66" width="343" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Du-gk-gLh">
+                                <rect key="frame" x="71" y="391" width="233" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="リセット"/>
+                                <connections>
+                                    <action selector="resetPicture" destination="0iD-V1-NIR" eventType="touchUpInside" id="4aU-qt-7S0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8NH-SQ-MdH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Gbd-2Z-LRf"/>
+                    <navigationItem key="navigationItem" id="EYj-YG-Sfs"/>
+                    <connections>
+                        <outlet property="imageView" destination="lHd-VT-AFg" id="bhk-VG-0tZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gC1-Bd-KpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="-1113"/>
+        </scene>
         <!--ごはん-->
         <scene sceneID="b2k-6i-ZTF">
             <objects>
@@ -97,7 +139,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YwA-4j-lp9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ごはん" id="SRd-wy-Kfp"/>
+                    <tabBarItem key="tabBarItem" title="ごはん" image="food.png" id="SRd-wy-Kfp"/>
                     <connections>
                         <outlet property="labelClock" destination="RgN-eu-8Uw" id="pSg-le-4fd"/>
                         <outlet property="labelDate" destination="u6y-77-ICY" id="mBh-P3-2MN"/>
@@ -146,13 +188,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.92003184559999995" green="0.62002983420000002" blue="0.73186171580000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" red="0.92003184559999995" green="0.62002983420000002" blue="0.73186171580000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="iSX-sN-8ct" kind="relationship" relationship="viewControllers" id="UXu-sb-zO3"/>
                         <segue destination="Jco-ru-c9a" kind="relationship" relationship="viewControllers" id="HzF-js-YWu"/>
                         <segue destination="Qz9-Db-Tcl" kind="relationship" relationship="viewControllers" id="dff-yK-xtf"/>
                         <segue destination="4h9-yJ-OZq" kind="relationship" relationship="viewControllers" id="gzg-rY-MfR"/>
+                        <segue destination="0iD-V1-NIR" kind="relationship" relationship="viewControllers" id="yiI-nq-NR9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMv-cE-IeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,4 +203,7 @@
             <point key="canvasLocation" x="276" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food.png" width="32" height="32"/>
+    </resources>
 </document>
