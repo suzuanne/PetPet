@@ -12,6 +12,18 @@ import NCMB
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     // 写真を表示するビュー
     @IBOutlet weak var imageView: UIImageView!
+   
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func tapEditButton(sender: UIButton) {
+        let view = storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
+        view.delegate = self as? EditProfileViewControllerDelegate
+        present(view, animated: true, completion: nil)
+    }
+    
+    func editDidFinished(text: String?){
+        textField.text = text
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +32,15 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        // textField.text = appDelegate.Text
+        print("うわああああああああああああああああああああああああ")
+        
+        
+    }
+
     // カメラロールから写真を選択する処理
     @IBAction func choosePicture() {
         // カメラロールが利用可能か？

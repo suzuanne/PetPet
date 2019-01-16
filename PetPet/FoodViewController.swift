@@ -18,20 +18,17 @@ class FoodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      labelClock.text = "まだあげていないようです"
-        
-        func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String {
-            let now = Date()
-            let formatter = DateFormatter()
-            formatter.dateFormat = format
-            return formatter.string(from: now as Date)
-        }
+        labelClock.text = "まだあげていないようです"
         labelDate.text = getToday(format:"yyyy-MM-dd")
-       
-
-        
+        loadData()
     }
     
+    func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String {
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: now as Date)
+    }
     
     // 現在時刻を表示する処理
     @IBAction func displayClock() {
@@ -53,6 +50,7 @@ class FoodViewController: UIViewController {
         
     }
     
+    
     @IBAction func save(){
         let object = NCMBObject(className: "food")
         
@@ -72,6 +70,7 @@ class FoodViewController: UIViewController {
         query?.findObjectsInBackground({ (result, error) in
             if error != nil {
                 print("error")
+                self.labelClock.text = "ネットワークエラーです。"
             } else {
                 let messages = result as! [NCMBObject]
                 let text = messages.last?.object(forKey: "text") as! String

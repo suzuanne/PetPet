@@ -43,5 +43,7 @@
 	</array>
 	<key>Privacy – Photo Library Usage Description</key>
 	<string>カメラロールの写真を表示する</string>
+	<key>NSCameraUsageDescription</key>
+	<string>カメラを起動する</string>
 </dict>
 </plist>

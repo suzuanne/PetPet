@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		77F7A405F27454EE4E372F9E /* Pods_PetPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787EB2490D4E0E1240379EFE /* Pods_PetPet.framework */; };
 		AB2B18C521C0E429001B1673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18C421C0E429001B1673 /* AppDelegate.swift */; };
-		AB2B18CA21C0E429001B1673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2B18C821C0E429001B1673 /* Main.storyboard */; };
+		AB2B18CA21C0E429001B1673 /* Sub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2B18C821C0E429001B1673 /* Sub.storyboard */; };
 		AB2B18CC21C0E42A001B1673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2B18CB21C0E42A001B1673 /* Assets.xcassets */; };
 		AB2B18CF21C0E42A001B1673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2B18CD21C0E42A001B1673 /* LaunchScreen.storyboard */; };
 		AB2B18D721C0E6C5001B1673 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18D621C0E6C5001B1673 /* FoodViewController.swift */; };
 		AB2B18D921C0E6F3001B1673 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */; };
 		AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */; };
 		AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */; };
+		AB3EE95321EEECC90018CCED /* NCMBKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE95021EEECC90018CCED /* NCMBKey.swift */; };
+		AB3EE95421EEECC90018CCED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE95121EEECC90018CCED /* User.swift */; };
+		AB3EE95521EEECC90018CCED /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE95221EEECC90018CCED /* Room.swift */; };
+		AB3EE95921EEED460018CCED /* placeholder-human@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3EE95821EEED460018CCED /* placeholder-human@2x.png */; };
+		AB5386E521EEF21C00EA1DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5386E421EEF21C00EA1DD7 /* ViewController.swift */; };
+		AB5386E721EEF23F00EA1DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5386E621EEF23F00EA1DD7 /* Main.storyboard */; };
+		AB5386E921EEF64300EA1DD7 /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5386E821EEF64300EA1DD7 /* Error+Extension.swift */; };
+		AB5386EC21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */; };
+		AB5386ED21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */; };
+		ABCEDB2721D6035400811C2A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */; };
+		ABCEDB2921D607DB00811C2A /* pProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */; };
 		ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF09E9C21CB652E00223B49 /* LoginViewController.swift */; };
 		ABF09E9F21D365C000223B49 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF09E9E21D365C000223B49 /* ProfileViewController.swift */; };
 		ABF09EA521D381CD00223B49 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF09EA421D381CC00223B49 /* food.png */; };
@@ -26,7 +37,7 @@
 		9BD76B88DC10ACA587970400 /* Pods-PetPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetPet/Pods-PetPet.release.xcconfig"; sourceTree = "<group>"; };
 		AB2B18C121C0E429001B1673 /* PetPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2B18C421C0E429001B1673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB2B18C921C0E429001B1673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB2B18C921C0E429001B1673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sub.storyboard; sourceTree = "<group>"; };
 		AB2B18CB21C0E42A001B1673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2B18CE21C0E42A001B1673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2B18D021C0E42A001B1673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +45,17 @@
 		AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 		AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		AB3EE95021EEECC90018CCED /* NCMBKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBKey.swift; sourceTree = "<group>"; };
+		AB3EE95121EEECC90018CCED /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AB3EE95221EEECC90018CCED /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		AB3EE95821EEED460018CCED /* placeholder-human@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder-human@2x.png"; sourceTree = "<group>"; };
+		AB5386E421EEF21C00EA1DD7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Downloads/NCMBRoomKeySampler-master/NCMBRoomKeySampler/Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		AB5386E621EEF23F00EA1DD7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AB5386E821EEF64300EA1DD7 /* Error+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Extension.swift"; sourceTree = "<group>"; };
+		AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pProfileViewController.swift; sourceTree = "<group>"; };
 		ABF09E9C21CB652E00223B49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ABF09E9E21D365C000223B49 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABF09EA421D381CC00223B49 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
@@ -63,6 +85,8 @@
 		AB2B18B821C0E429001B1673 = {
 			isa = PBXGroup;
 			children = (
+				AB3EE95621EEED460018CCED /* Resources */,
+				AB3EE94F21EEECC90018CCED /* Models */,
 				AB2B18C321C0E429001B1673 /* PetPet */,
 				AB2B18C221C0E429001B1673 /* Products */,
 				AC821378F87DD6FF0B7533F6 /* Pods */,
@@ -81,13 +105,19 @@
 		AB2B18C321C0E429001B1673 /* PetPet */ = {
 			isa = PBXGroup;
 			children = (
+				AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */,
+				AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */,
+				AB5386E421EEF21C00EA1DD7 /* ViewController.swift */,
+				AB5386E621EEF23F00EA1DD7 /* Main.storyboard */,
 				AB2B18C421C0E429001B1673 /* AppDelegate.swift */,
-				AB2B18C821C0E429001B1673 /* Main.storyboard */,
+				AB2B18C821C0E429001B1673 /* Sub.storyboard */,
 				AB2B18D621C0E6C5001B1673 /* FoodViewController.swift */,
 				AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */,
 				ABF09E9E21D365C000223B49 /* ProfileViewController.swift */,
 				AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */,
+				ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */,
 				AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */,
+				ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */,
 				ABF09EA421D381CC00223B49 /* food.png */,
 				AB2B18CB21C0E42A001B1673 /* Assets.xcassets */,
 				AB2B18CD21C0E42A001B1673 /* LaunchScreen.storyboard */,
@@ -95,6 +125,33 @@
 				AB2B18D021C0E42A001B1673 /* Info.plist */,
 			);
 			path = PetPet;
+			sourceTree = "<group>";
+		};
+		AB3EE94F21EEECC90018CCED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB5386E821EEF64300EA1DD7 /* Error+Extension.swift */,
+				AB3EE95021EEECC90018CCED /* NCMBKey.swift */,
+				AB3EE95121EEECC90018CCED /* User.swift */,
+				AB3EE95221EEECC90018CCED /* Room.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB3EE95621EEED460018CCED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB3EE95721EEED460018CCED /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB3EE95721EEED460018CCED /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AB3EE95821EEED460018CCED /* placeholder-human@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		AC821378F87DD6FF0B7533F6 /* Pods */ = {
@@ -167,8 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2B18CF21C0E42A001B1673 /* LaunchScreen.storyboard in Resources */,
+				AB3EE95921EEED460018CCED /* placeholder-human@2x.png in Resources */,
+				AB5386EC21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib in Resources */,
 				AB2B18CC21C0E42A001B1673 /* Assets.xcassets in Resources */,
-				AB2B18CA21C0E429001B1673 /* Main.storyboard in Resources */,
+				AB5386E721EEF23F00EA1DD7 /* Main.storyboard in Resources */,
+				AB2B18CA21C0E429001B1673 /* Sub.storyboard in Resources */,
 				ABF09EA521D381CD00223B49 /* food.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,13 +245,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PetPet/Pods-PetPet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,25 +291,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCEDB2721D6035400811C2A /* EditProfileViewController.swift in Sources */,
 				ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */,
+				AB3EE95521EEECC90018CCED /* Room.swift in Sources */,
 				AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */,
 				AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */,
 				AB2B18D721C0E6C5001B1673 /* FoodViewController.swift in Sources */,
+				AB3EE95321EEECC90018CCED /* NCMBKey.swift in Sources */,
+				ABCEDB2921D607DB00811C2A /* pProfileViewController.swift in Sources */,
+				AB5386E521EEF21C00EA1DD7 /* ViewController.swift in Sources */,
+				AB5386ED21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift in Sources */,
 				ABF09E9F21D365C000223B49 /* ProfileViewController.swift in Sources */,
+				AB5386E921EEF64300EA1DD7 /* Error+Extension.swift in Sources */,
 				AB2B18C521C0E429001B1673 /* AppDelegate.swift in Sources */,
 				AB2B18D921C0E6F3001B1673 /* WalkViewController.swift in Sources */,
+				AB3EE95421EEECC90018CCED /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB2B18C821C0E429001B1673 /* Main.storyboard */ = {
+		AB2B18C821C0E429001B1673 /* Sub.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB2B18C921C0E429001B1673 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Sub.storyboard;
 			sourceTree = "<group>";
 		};
 		AB2B18CD21C0E42A001B1673 /* LaunchScreen.storyboard */ = {
