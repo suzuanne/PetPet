@@ -11,77 +11,73 @@ import NCMB
 
 class FoodViewController: UIViewController {
     
-    @IBOutlet var labelClock: UILabel!
-    @IBOutlet var labelDate: UILabel!
-    var displayTime: String = ""
-    
+    @IBOutlet var labelToday: UILabel!
+    @IBOutlet var morningButton: UIButton!
+    @IBOutlet var nightButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelClock.text = "まだあげていないようです"
-        labelDate.text = getToday(format:"yyyy-MM-dd")
-        loadData()
+        labelToday.text = getToday(format:"yyyy-MM-dd")
+        //loadData()
+        
+        morningButton.backgroundColor = UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)                                               // 背景色
+        morningButton.layer.borderWidth = 0.5                                              // 枠線の幅
+        morningButton.layer.borderColor = UIColor.black.cgColor                            // 枠線の色
+        morningButton.layer.cornerRadius = 8.0                                             // 角丸のサイズ
+        morningButton.setTitleColor(UIColor.white, for: UIControl.State.normal)             // タイトルの色
+        
+        morningButton.setTitleColor(UIColor.black, for: .highlighted)
+        //タップされた時のボタンの文字の色を決める
+        // morningButton.setBackgroundColor(UIColor.white, for: .highlighted)
+        
+        nightButton.backgroundColor = UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)
+        nightButton.layer.borderWidth = 0.5
+        nightButton.layer.borderColor = UIColor.black.cgColor
+        nightButton.layer.cornerRadius = 8.0
+        nightButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        nightButton.setTitleColor(UIColor.black, for: .highlighted)
+        
+
     }
     
-    func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String {
+    func getToday(format:String = "yyyy年MM月dd日") -> String {
         let now = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.string(from: now as Date)
     }
     
-    // 現在時刻を表示する処理
-    @IBAction func displayClock() {
-        // 現在時刻を「HH:MM:SS」形式で取得する
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd HH:mm"
-        var displayTime = formatter.string(from: Date())    // Date()だけで現在時刻を表す
-        
-        // 0から始まる時刻の場合は「 H:MM:SS」形式にする
-        if displayTime.hasPrefix("0") {
-            // 最初に見つかった0だけ削除(スペース埋め)される
-            if let range = displayTime.range(of: "0") {
-                displayTime.replaceSubrange(range, with: " ")
-            }
+    
+    @IBAction func changeMColor(){
+        if (morningButton.backgroundColor == UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)) {
+        morningButton.backgroundColor = UIColor(red: 255/255, green: 128/255, blue: 168/255, alpha: 1.0)
+        morningButton.layer.borderColor = UIColor.white.cgColor
+            
+        }else{
+            morningButton.backgroundColor = UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)
+            
         }
-        
-        // ラベルに表示
-        labelClock.text = displayTime
-        
     }
     
-    
-    @IBAction func save(){
-        let object = NCMBObject(className: "food")
+    @IBAction func changeNColor(){
         
-        object?.setObject(labelClock.text, forKey: "text")
-        object?.saveInBackground({ (error) in
-            if error != nil {
-                print("error")
-            }else {
-                print("success")
-                self.loadData()
-            }
-        })
+        if (nightButton.backgroundColor == UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)) {
+            nightButton.backgroundColor = UIColor(red: 255/255, green: 128/255, blue: 168/255, alpha: 1.0)
+            nightButton.layer.borderColor = UIColor.white.cgColor
+            
+        }else{
+            nightButton.backgroundColor = UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)
+            
+        }
     }
+
     
-    func loadData(){
-        let query = NCMBQuery(className: "food")
-        query?.findObjectsInBackground({ (result, error) in
-            if error != nil {
-                print("error")
-                self.labelClock.text = "ネットワークエラーです。"
-            } else {
-                let messages = result as! [NCMBObject]
-                let text = messages.last?.object(forKey: "text") as! String
-                
-                self.labelClock.text = text
-            }
-        })
+
+
+    @IBAction func clearColor(){
+        morningButton.backgroundColor = UIColor(red: 226/255, green: 222/255, blue: 224/255, alpha: 1.0)
+        morningButton.layer.borderColor = UIColor.black.cgColor
     }
-    
     
 }
-
-
-

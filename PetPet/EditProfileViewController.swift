@@ -20,6 +20,7 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
     @IBOutlet var userBirthdayTextField: UITextField!
     @IBOutlet var userBloodTextField: UITextField!
     @IBOutlet var userPlaceTextField: UITextField!
+    @IBOutlet var userHospitalTextField: UITextField!
     
     var delegate: EditProfileViewControllerDelegate! = nil
     
@@ -30,10 +31,25 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
     @IBAction func tapButton(sender: UIButton) {
         let nameText = userNameTextField.text!
         let birthdayText = userBirthdayTextField.text!
+        let bloodtypeText = userBloodTextField.text!
+        let placeText = userPlaceTextField.text!
+        let hospitalText = userHospitalTextField.text!
         
         UserDefaults.standard.set(nameText, forKey: "NameText")
         UserDefaults.standard.set(birthdayText, forKey: "BirthdayText")
+        UserDefaults.standard.set(bloodtypeText, forKey: "BloodText")
+        UserDefaults.standard.set(placeText, forKey: "PlaceText")
+        UserDefaults.standard.set(hospitalText, forKey: "HospitalText")
+        
+        
+        
         UserDefaults.standard.synchronize()
+        
+        Profile.saveProfile(name: nameText, birthday: birthdayText, bloodtype: bloodtypeText, place: placeText, hospital: hospitalText) { (error) in
+            print(error?.code)
+        }
+        
+        sleep(1)
         
         dismiss(animated: true, completion: nil)
     }
@@ -45,9 +61,17 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
         userBirthdayTextField.delegate = self
         userBloodTextField.delegate = self
         userPlaceTextField.delegate = self
+        userHospitalTextField.delegate = self
+        
+        userNameTextField.text = UserDefaults.standard.string(forKey: "NameText")
+        userBirthdayTextField.text = UserDefaults.standard.string(forKey: "BirthdayText")
+        userBloodTextField.text = UserDefaults.standard.string(forKey: "BloodText")
+        userPlaceTextField.text = UserDefaults.standard.string(forKey: "PlaceText")
+        userHospitalTextField.text = UserDefaults.standard.string(forKey: "HospitalText")
         
         //let userName = NCMBUser.current().userName
         //userNameTextField.text = userName
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

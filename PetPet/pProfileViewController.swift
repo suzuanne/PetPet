@@ -17,20 +17,46 @@ class pProfileViewController: UIViewController {
     @IBOutlet var BirthdayLabel: UILabel!
     @IBOutlet var BloodtypeLabel: UILabel!
     @IBOutlet var PlaceLabel: UILabel!
+    @IBOutlet var HospitalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //PetNameLabel.layer.borderWidth = 0.5                                              // 枠線の幅
+        //PetNameLabel.layer.borderColor = UIColor.black.cgColor                            // 枠線の色
+        //PetNameLabel.layer.cornerRadius = 8.0
+        
+        
+       // BirthdayLabel.layer.borderWidth = 0.5                                              // 枠線の幅
+       // BirthdayLabel.layer.borderColor = UIColor.black.cgColor                            // 枠線の色
+       // BirthdayLabel.layer.cornerRadius = 8.0
     }
+    
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let name = UserDefaults.standard.string(forKey: "NameText")
-        PetNameLabel.text = name
-        
-        let birthday = UserDefaults.standard.string(forKey: "BirthdayText")
-        BirthdayLabel.text = birthday
+        if let roomKey = Room.currentRoom.roomKey {
+            Profile.loadProfile(roomKey: roomKey) { (profiles, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    
+                    if let profiles = profiles, profiles.count > 0, let dog = profiles.last {
+                        self.PetNameLabel.text = dog.name
+                        self.BirthdayLabel.text = dog.birthday
+                        self.BloodtypeLabel.text = dog.bloodtype
+                        self.PlaceLabel.text = dog.place
+                        self.HospitalLabel.text = dog.hospital
+                       
+                    }
+                }
+            }
+        } else {
+            print("roomKey is nil")
+        }
         
         loadData()
     }
@@ -47,8 +73,21 @@ class pProfileViewController: UIViewController {
                         
                     })
                 }
+                
+                //let Place = object?.object(forKey: "place") as? String
+                //if let Place =  Place {
+                
+                
+                
+                
+                //}
             }
-        })
-    }
+            
+            
+        }
+        
+        
+        
+    )}
     
 }

@@ -145,6 +145,28 @@ class Room {
         })
     }
     
+    static func addMember(roomKey: String, completion: @escaping(Error?) -> ()) {
+        // 検索
+        let query = NCMBQuery(className: "Room")
+        query?.includeKey("users")
+        query?.whereKey("roomKey", equalTo: roomKey)
+        query?.findObjectsInBackground({ (result, error) in
+            if let error = error {
+                completion(error)
+            } else {
+                // 部屋がすでにあった場合
+                if let objects = result as? [NCMBObject] {
+                    let object = objects.first
+                    let relation = object?.relationforKey("users")
+                    relation?.add(NCMBUser.current())
+                    object?.saveInBackground({ (error) in
+                        completion(error)
+                    })
+                }
+            }
+        })
+    }
+    
     
     static func upload(image: UIImage, name: String?, completion: @escaping(String?, Error?) -> ()) {
         let data = image.pngData()

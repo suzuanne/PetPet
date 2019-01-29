@@ -25,10 +25,22 @@
 		AB5386E921EEF64300EA1DD7 /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5386E821EEF64300EA1DD7 /* Error+Extension.swift */; };
 		AB5386EC21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */; };
 		AB5386ED21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */; };
+		AB707F2E21F83D6100974C9D /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F2D21F83D6100974C9D /* Food.swift */; };
+		AB707F3021F83E5000974C9D /* FoodFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F2F21F83E5000974C9D /* FoodFoodViewController.swift */; };
+		AB707F3321F83FAB00974C9D /* FoodRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3121F83FAB00974C9D /* FoodRecordTableViewCell.swift */; };
+		AB707F3421F83FAB00974C9D /* FoodRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB707F3221F83FAB00974C9D /* FoodRecordTableViewCell.xib */; };
+		AB707F3621F8533200974C9D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3521F8533200974C9D /* Profile.swift */; };
+		AB707F3B21FDC29200974C9D /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3921FDC29200974C9D /* TestTableViewController.swift */; };
+		AB707F3C21FDC29200974C9D /* TestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB707F3A21FDC29200974C9D /* TestTableViewController.xib */; };
+		AB707F4021FF298600974C9D /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3F21FF298600974C9D /* Walk.swift */; };
+		AB707F4321FF2C8800974C9D /* WalkRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F4121FF2C8800974C9D /* WalkRecordTableViewCell.swift */; };
+		AB707F4421FF2C8800974C9D /* WalkRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB707F4221FF2C8800974C9D /* WalkRecordTableViewCell.xib */; };
+		AB9D7DAE22001F17000C4CB0 /* hone.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DAD22001F15000C4CB0 /* hone.png */; };
+		AB9D7DB022001F8B000C4CB0 /* sannpo.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DAF22001F8B000C4CB0 /* sannpo.png */; };
+		AB9D7DB222001FE2000C4CB0 /* inu.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DB122001FE2000C4CB0 /* inu.png */; };
 		ABCEDB2721D6035400811C2A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */; };
 		ABCEDB2921D607DB00811C2A /* pProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */; };
 		ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF09E9C21CB652E00223B49 /* LoginViewController.swift */; };
-		ABF09E9F21D365C000223B49 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF09E9E21D365C000223B49 /* ProfileViewController.swift */; };
 		ABF09EA521D381CD00223B49 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF09EA421D381CC00223B49 /* food.png */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +66,22 @@
 		AB5386E821EEF64300EA1DD7 /* Error+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Extension.swift"; sourceTree = "<group>"; };
 		AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
 		AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB707F2D21F83D6100974C9D /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		AB707F2F21F83E5000974C9D /* FoodFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFoodViewController.swift; sourceTree = "<group>"; };
+		AB707F3121F83FAB00974C9D /* FoodRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordTableViewCell.swift; sourceTree = "<group>"; };
+		AB707F3221F83FAB00974C9D /* FoodRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordTableViewCell.xib; sourceTree = "<group>"; };
+		AB707F3521F8533200974C9D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		AB707F3921FDC29200974C9D /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		AB707F3A21FDC29200974C9D /* TestTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewController.xib; sourceTree = "<group>"; };
+		AB707F3F21FF298600974C9D /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		AB707F4121FF2C8800974C9D /* WalkRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkRecordTableViewCell.swift; sourceTree = "<group>"; };
+		AB707F4221FF2C8800974C9D /* WalkRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkRecordTableViewCell.xib; sourceTree = "<group>"; };
+		AB9D7DAD22001F15000C4CB0 /* hone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hone.png; sourceTree = "<group>"; };
+		AB9D7DAF22001F8B000C4CB0 /* sannpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sannpo.png; sourceTree = "<group>"; };
+		AB9D7DB122001FE2000C4CB0 /* inu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inu.png; sourceTree = "<group>"; };
 		ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pProfileViewController.swift; sourceTree = "<group>"; };
 		ABF09E9C21CB652E00223B49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		ABF09E9E21D365C000223B49 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABF09EA421D381CC00223B49 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		B25A64D2D1B23643BEC3A3EE /* Pods-PetPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetPet/Pods-PetPet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,18 +130,27 @@
 			isa = PBXGroup;
 			children = (
 				AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */,
+				AB707F3921FDC29200974C9D /* TestTableViewController.swift */,
+				AB707F3A21FDC29200974C9D /* TestTableViewController.xib */,
 				AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */,
 				AB5386E421EEF21C00EA1DD7 /* ViewController.swift */,
 				AB5386E621EEF23F00EA1DD7 /* Main.storyboard */,
 				AB2B18C421C0E429001B1673 /* AppDelegate.swift */,
 				AB2B18C821C0E429001B1673 /* Sub.storyboard */,
 				AB2B18D621C0E6C5001B1673 /* FoodViewController.swift */,
+				AB707F2F21F83E5000974C9D /* FoodFoodViewController.swift */,
+				AB707F3121F83FAB00974C9D /* FoodRecordTableViewCell.swift */,
+				AB707F3221F83FAB00974C9D /* FoodRecordTableViewCell.xib */,
 				AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */,
-				ABF09E9E21D365C000223B49 /* ProfileViewController.swift */,
+				AB707F4121FF2C8800974C9D /* WalkRecordTableViewCell.swift */,
+				AB707F4221FF2C8800974C9D /* WalkRecordTableViewCell.xib */,
 				AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */,
 				ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */,
 				AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */,
 				ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */,
+				AB9D7DB122001FE2000C4CB0 /* inu.png */,
+				AB9D7DAF22001F8B000C4CB0 /* sannpo.png */,
+				AB9D7DAD22001F15000C4CB0 /* hone.png */,
 				ABF09EA421D381CC00223B49 /* food.png */,
 				AB2B18CB21C0E42A001B1673 /* Assets.xcassets */,
 				AB2B18CD21C0E42A001B1673 /* LaunchScreen.storyboard */,
@@ -134,6 +167,9 @@
 				AB3EE95021EEECC90018CCED /* NCMBKey.swift */,
 				AB3EE95121EEECC90018CCED /* User.swift */,
 				AB3EE95221EEECC90018CCED /* Room.swift */,
+				AB707F2D21F83D6100974C9D /* Food.swift */,
+				AB707F3F21FF298600974C9D /* Walk.swift */,
+				AB707F3521F8533200974C9D /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,9 +262,15 @@
 				AB2B18CF21C0E42A001B1673 /* LaunchScreen.storyboard in Resources */,
 				AB3EE95921EEED460018CCED /* placeholder-human@2x.png in Resources */,
 				AB5386EC21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib in Resources */,
+				AB707F4421FF2C8800974C9D /* WalkRecordTableViewCell.xib in Resources */,
+				AB9D7DB222001FE2000C4CB0 /* inu.png in Resources */,
+				AB707F3C21FDC29200974C9D /* TestTableViewController.xib in Resources */,
 				AB2B18CC21C0E42A001B1673 /* Assets.xcassets in Resources */,
 				AB5386E721EEF23F00EA1DD7 /* Main.storyboard in Resources */,
 				AB2B18CA21C0E429001B1673 /* Sub.storyboard in Resources */,
+				AB9D7DB022001F8B000C4CB0 /* sannpo.png in Resources */,
+				AB9D7DAE22001F17000C4CB0 /* hone.png in Resources */,
+				AB707F3421F83FAB00974C9D /* FoodRecordTableViewCell.xib in Resources */,
 				ABF09EA521D381CD00223B49 /* food.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,16 +335,22 @@
 			files = (
 				ABCEDB2721D6035400811C2A /* EditProfileViewController.swift in Sources */,
 				ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */,
+				AB707F2E21F83D6100974C9D /* Food.swift in Sources */,
 				AB3EE95521EEECC90018CCED /* Room.swift in Sources */,
 				AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */,
+				AB707F3321F83FAB00974C9D /* FoodRecordTableViewCell.swift in Sources */,
 				AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */,
+				AB707F3621F8533200974C9D /* Profile.swift in Sources */,
+				AB707F3021F83E5000974C9D /* FoodFoodViewController.swift in Sources */,
 				AB2B18D721C0E6C5001B1673 /* FoodViewController.swift in Sources */,
 				AB3EE95321EEECC90018CCED /* NCMBKey.swift in Sources */,
 				ABCEDB2921D607DB00811C2A /* pProfileViewController.swift in Sources */,
+				AB707F4021FF298600974C9D /* Walk.swift in Sources */,
 				AB5386E521EEF21C00EA1DD7 /* ViewController.swift in Sources */,
 				AB5386ED21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift in Sources */,
-				ABF09E9F21D365C000223B49 /* ProfileViewController.swift in Sources */,
 				AB5386E921EEF64300EA1DD7 /* Error+Extension.swift in Sources */,
+				AB707F4321FF2C8800974C9D /* WalkRecordTableViewCell.swift in Sources */,
+				AB707F3B21FDC29200974C9D /* TestTableViewController.swift in Sources */,
 				AB2B18C521C0E429001B1673 /* AppDelegate.swift in Sources */,
 				AB2B18D921C0E6F3001B1673 /* WalkViewController.swift in Sources */,
 				AB3EE95421EEECC90018CCED /* User.swift in Sources */,
