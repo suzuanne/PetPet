@@ -28,7 +28,7 @@ class Walk {
     static func loadWalkRecords(roomKey: String, completion: @escaping([Walk]?, Error?) -> ()) {
         print(roomKey)
         let query = NCMBQuery(className: "Walk")
-        // query?.whereKey(roomKey, equalTo: "roomKey")
+     //   query?.whereKey(roomKey, equalTo: "roomKey")
         query?.includeKey("user")
         query?.findObjectsInBackground({ (result, error) in
             if let error = error {
@@ -39,7 +39,7 @@ class Walk {
                     for object in objects {
                         let walkRecord = Walk()
                         walkRecord.date = object.createDate
-                        walkRecord.roomKey = object.object(forKey: "roomKey") as? String
+            //            walkRecord.roomKey = object.object(forKey: "roomKey") as? String
                         walkRecord.user = object.object(forKey: "user") as? NCMBUser
                         walkRecords.append(walkRecord)
                     }

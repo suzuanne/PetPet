@@ -27,7 +27,7 @@ class Food {
     static func loadFoodRecords(roomKey: String, completion: @escaping([Food]?, Error?) -> ()) {
         print(roomKey)
         let query = NCMBQuery(className: "Food")
-        // query?.whereKey(roomKey, equalTo: "roomKey")
+     //   query?.whereKey(roomKey, equalTo: "roomKey")
         query?.includeKey("user")
         query?.findObjectsInBackground({ (result, error) in
             if let error = error {
@@ -38,7 +38,7 @@ class Food {
                     for object in objects {
                         let foodRecord = Food()
                         foodRecord.date = object.createDate
-                        foodRecord.roomKey = object.object(forKey: "roomKey") as? String
+             //           foodRecord.roomKey = object.object(forKey: "roomKey") as? String
                         foodRecord.user = object.object(forKey: "user") as? NCMBUser
                         foodRecords.append(foodRecord)
                     }

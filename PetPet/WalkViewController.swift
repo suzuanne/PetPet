@@ -37,11 +37,11 @@ class WalkViewController: UIViewController, UITableViewDataSource, UITableViewDe
         loadRecords()
     }
     
-    func tableView(_ walkRecordTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return walkRecords.count
     }
     
-    func tableView(_ walkRecordTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell =
             walkRecordTableView.dequeueReusableCell(withIdentifier: "WalkRecordTableViewCell") as! WalkRecordTableViewCell
@@ -55,8 +55,8 @@ class WalkViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.timeLabel.text = time
         }
         
-        cell.textLabel?.text = formatter.string(from: walkRecords[indexPath.row].date!)
-        cell.textLabel?.textColor = UIColor(red: 235/255, green: 150/255, blue: 139/255, alpha: 1.0)
+        //cell.textLabel?.text = formatter.string(from: walkRecords[indexPath.row].date!)
+        cell.timeLabel.textColor = UIColor(red: 235/255, green: 150/255, blue: 139/255, alpha: 1.0)
         //cell.contentView.backgroundColor = UIColor(red: 186/255, green: 87/255, blue: 114/255, alpha: 1.0)
         
         cell.userNameLabel.text = walkRecords[indexPath.row].user?.object(forKey: "displayName") as? String
@@ -65,11 +65,11 @@ class WalkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @available(iOS 11.0, *)
-    func tableView(_ walkRecordTableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) ->
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) ->
         UISwipeActionsConfiguration? {
             let delete: UIContextualAction =
                 UIContextualAction(style: .normal, title: "削除"){ (action: UIContextualAction, view: UIView,  completionHandler) in
-                    walkRecordTableView.deleteRows(at: [indexPath], with: .fade)
+                    tableView.deleteRows(at: [indexPath], with: .fade)
                     self.walkRecords.remove(at: indexPath.row)
                     completionHandler(true)
             }
@@ -82,11 +82,11 @@ class WalkViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return deleteAction
     }
     
-    func tableView(_ walkRecordTableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
-    func tableView(_ walkRecordTableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 56.0
     }
     
@@ -98,6 +98,7 @@ class WalkViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 } else {
                     if let walks = walks {
                         self.walkRecords = walks
+                        print(self.walkRecords)
                         self.walkRecords.reverse()
                         self.walkRecordTableView.reloadData()
                     }

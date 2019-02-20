@@ -30,6 +30,11 @@ class pProfileViewController: UIViewController {
        // BirthdayLabel.layer.borderWidth = 0.5                                              // 枠線の幅
        // BirthdayLabel.layer.borderColor = UIColor.black.cgColor                            // 枠線の色
        // BirthdayLabel.layer.cornerRadius = 8.0
+        
+        petImageView.layer.cornerRadius = petImageView.bounds.width / 2.0
+        petImageView.layer.borderWidth = 4.0
+        petImageView.layer.borderColor = UIColor.white.cgColor
+        petImageView.layer.masksToBounds = true
     }
     
     

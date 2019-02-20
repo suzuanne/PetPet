@@ -14,7 +14,6 @@
 		AB2B18CF21C0E42A001B1673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2B18CD21C0E42A001B1673 /* LaunchScreen.storyboard */; };
 		AB2B18D721C0E6C5001B1673 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18D621C0E6C5001B1673 /* FoodViewController.swift */; };
 		AB2B18D921C0E6F3001B1673 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */; };
-		AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */; };
 		AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */; };
 		AB3EE95321EEECC90018CCED /* NCMBKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE95021EEECC90018CCED /* NCMBKey.swift */; };
 		AB3EE95421EEECC90018CCED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE95121EEECC90018CCED /* User.swift */; };
@@ -30,14 +29,20 @@
 		AB707F3321F83FAB00974C9D /* FoodRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3121F83FAB00974C9D /* FoodRecordTableViewCell.swift */; };
 		AB707F3421F83FAB00974C9D /* FoodRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB707F3221F83FAB00974C9D /* FoodRecordTableViewCell.xib */; };
 		AB707F3621F8533200974C9D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3521F8533200974C9D /* Profile.swift */; };
-		AB707F3B21FDC29200974C9D /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3921FDC29200974C9D /* TestTableViewController.swift */; };
-		AB707F3C21FDC29200974C9D /* TestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB707F3A21FDC29200974C9D /* TestTableViewController.xib */; };
 		AB707F4021FF298600974C9D /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F3F21FF298600974C9D /* Walk.swift */; };
 		AB707F4321FF2C8800974C9D /* WalkRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707F4121FF2C8800974C9D /* WalkRecordTableViewCell.swift */; };
 		AB707F4421FF2C8800974C9D /* WalkRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB707F4221FF2C8800974C9D /* WalkRecordTableViewCell.xib */; };
 		AB9D7DAE22001F17000C4CB0 /* hone.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DAD22001F15000C4CB0 /* hone.png */; };
 		AB9D7DB022001F8B000C4CB0 /* sannpo.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DAF22001F8B000C4CB0 /* sannpo.png */; };
 		AB9D7DB222001FE2000C4CB0 /* inu.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DB122001FE2000C4CB0 /* inu.png */; };
+		AB9D7DB522007315000C4CB0 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D7DB322007315000C4CB0 /* AlbumViewController.swift */; };
+		AB9D7DB822007333000C4CB0 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D7DB722007333000C4CB0 /* Album.swift */; };
+		AB9D7DBB220074C4000C4CB0 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D7DB9220074C4000C4CB0 /* AlbumCollectionViewCell.swift */; };
+		AB9D7DBC220074C4000C4CB0 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DBA220074C4000C4CB0 /* AlbumCollectionViewCell.xib */; };
+		AB9D7DBE22007789000C4CB0 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DBD22007789000C4CB0 /* album.png */; };
+		AB9D7DC2220138C3000C4CB0 /* heart-outline-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DC1220138C3000C4CB0 /* heart-outline-2.png */; };
+		AB9D7DC4220164AA000C4CB0 /* ohana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DC3220164AA000C4CB0 /* ohana.jpg */; };
+		AB9D7DC62201657D000C4CB0 /* ohana2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB9D7DC52201657D000C4CB0 /* ohana2.jpg */; };
 		ABCEDB2721D6035400811C2A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */; };
 		ABCEDB2921D607DB00811C2A /* pProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */; };
 		ABF09E9D21CB652E00223B49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF09E9C21CB652E00223B49 /* LoginViewController.swift */; };
@@ -55,7 +60,6 @@
 		AB2B18D021C0E42A001B1673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2B18D621C0E6C5001B1673 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
-		AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		AB3EE95021EEECC90018CCED /* NCMBKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBKey.swift; sourceTree = "<group>"; };
 		AB3EE95121EEECC90018CCED /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -71,14 +75,20 @@
 		AB707F3121F83FAB00974C9D /* FoodRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordTableViewCell.swift; sourceTree = "<group>"; };
 		AB707F3221F83FAB00974C9D /* FoodRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordTableViewCell.xib; sourceTree = "<group>"; };
 		AB707F3521F8533200974C9D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		AB707F3921FDC29200974C9D /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
-		AB707F3A21FDC29200974C9D /* TestTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewController.xib; sourceTree = "<group>"; };
 		AB707F3F21FF298600974C9D /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 		AB707F4121FF2C8800974C9D /* WalkRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkRecordTableViewCell.swift; sourceTree = "<group>"; };
 		AB707F4221FF2C8800974C9D /* WalkRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkRecordTableViewCell.xib; sourceTree = "<group>"; };
 		AB9D7DAD22001F15000C4CB0 /* hone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hone.png; sourceTree = "<group>"; };
 		AB9D7DAF22001F8B000C4CB0 /* sannpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sannpo.png; sourceTree = "<group>"; };
 		AB9D7DB122001FE2000C4CB0 /* inu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inu.png; sourceTree = "<group>"; };
+		AB9D7DB322007315000C4CB0 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		AB9D7DB722007333000C4CB0 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		AB9D7DB9220074C4000C4CB0 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB9D7DBA220074C4000C4CB0 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		AB9D7DBD22007789000C4CB0 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
+		AB9D7DC1220138C3000C4CB0 /* heart-outline-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-outline-2.png"; sourceTree = "<group>"; };
+		AB9D7DC3220164AA000C4CB0 /* ohana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ohana.jpg; sourceTree = "<group>"; };
+		AB9D7DC52201657D000C4CB0 /* ohana2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ohana2.jpg; sourceTree = "<group>"; };
 		ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pProfileViewController.swift; sourceTree = "<group>"; };
 		ABF09E9C21CB652E00223B49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -130,9 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				AB5386EB21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift */,
-				AB707F3921FDC29200974C9D /* TestTableViewController.swift */,
-				AB707F3A21FDC29200974C9D /* TestTableViewController.xib */,
 				AB5386EA21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib */,
+				AB9D7DB9220074C4000C4CB0 /* AlbumCollectionViewCell.swift */,
+				AB9D7DBA220074C4000C4CB0 /* AlbumCollectionViewCell.xib */,
 				AB5386E421EEF21C00EA1DD7 /* ViewController.swift */,
 				AB5386E621EEF23F00EA1DD7 /* Main.storyboard */,
 				AB2B18C421C0E429001B1673 /* AppDelegate.swift */,
@@ -143,12 +153,13 @@
 				AB707F3221F83FAB00974C9D /* FoodRecordTableViewCell.xib */,
 				AB2B18D821C0E6F3001B1673 /* WalkViewController.swift */,
 				AB707F4121FF2C8800974C9D /* WalkRecordTableViewCell.swift */,
+				AB9D7DB322007315000C4CB0 /* AlbumViewController.swift */,
 				AB707F4221FF2C8800974C9D /* WalkRecordTableViewCell.xib */,
-				AB2B18DA21C0E706001B1673 /* AlbumViewController.swift */,
 				ABCEDB2621D6035400811C2A /* EditProfileViewController.swift */,
 				AB2B18DC21C0E78D001B1673 /* CalendarViewController.swift */,
 				ABCEDB2821D607DB00811C2A /* pProfileViewController.swift */,
 				AB9D7DB122001FE2000C4CB0 /* inu.png */,
+				AB9D7DBD22007789000C4CB0 /* album.png */,
 				AB9D7DAF22001F8B000C4CB0 /* sannpo.png */,
 				AB9D7DAD22001F15000C4CB0 /* hone.png */,
 				ABF09EA421D381CC00223B49 /* food.png */,
@@ -169,6 +180,7 @@
 				AB3EE95221EEECC90018CCED /* Room.swift */,
 				AB707F2D21F83D6100974C9D /* Food.swift */,
 				AB707F3F21FF298600974C9D /* Walk.swift */,
+				AB9D7DB722007333000C4CB0 /* Album.swift */,
 				AB707F3521F8533200974C9D /* Profile.swift */,
 			);
 			path = Models;
@@ -185,6 +197,9 @@
 		AB3EE95721EEED460018CCED /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AB9D7DC1220138C3000C4CB0 /* heart-outline-2.png */,
+				AB9D7DC3220164AA000C4CB0 /* ohana.jpg */,
+				AB9D7DC52201657D000C4CB0 /* ohana2.jpg */,
 				AB3EE95821EEED460018CCED /* placeholder-human@2x.png */,
 			);
 			path = Images;
@@ -263,15 +278,19 @@
 				AB3EE95921EEED460018CCED /* placeholder-human@2x.png in Resources */,
 				AB5386EC21EEF6FA00EA1DD7 /* UserCollectionViewCell.xib in Resources */,
 				AB707F4421FF2C8800974C9D /* WalkRecordTableViewCell.xib in Resources */,
+				AB9D7DBC220074C4000C4CB0 /* AlbumCollectionViewCell.xib in Resources */,
 				AB9D7DB222001FE2000C4CB0 /* inu.png in Resources */,
-				AB707F3C21FDC29200974C9D /* TestTableViewController.xib in Resources */,
 				AB2B18CC21C0E42A001B1673 /* Assets.xcassets in Resources */,
+				AB9D7DC62201657D000C4CB0 /* ohana2.jpg in Resources */,
 				AB5386E721EEF23F00EA1DD7 /* Main.storyboard in Resources */,
+				AB9D7DC2220138C3000C4CB0 /* heart-outline-2.png in Resources */,
 				AB2B18CA21C0E429001B1673 /* Sub.storyboard in Resources */,
+				AB9D7DBE22007789000C4CB0 /* album.png in Resources */,
 				AB9D7DB022001F8B000C4CB0 /* sannpo.png in Resources */,
 				AB9D7DAE22001F17000C4CB0 /* hone.png in Resources */,
 				AB707F3421F83FAB00974C9D /* FoodRecordTableViewCell.xib in Resources */,
 				ABF09EA521D381CD00223B49 /* food.png in Resources */,
+				AB9D7DC4220164AA000C4CB0 /* ohana.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +358,7 @@
 				AB3EE95521EEECC90018CCED /* Room.swift in Sources */,
 				AB2B18DD21C0E78D001B1673 /* CalendarViewController.swift in Sources */,
 				AB707F3321F83FAB00974C9D /* FoodRecordTableViewCell.swift in Sources */,
-				AB2B18DB21C0E706001B1673 /* AlbumViewController.swift in Sources */,
+				AB9D7DB522007315000C4CB0 /* AlbumViewController.swift in Sources */,
 				AB707F3621F8533200974C9D /* Profile.swift in Sources */,
 				AB707F3021F83E5000974C9D /* FoodFoodViewController.swift in Sources */,
 				AB2B18D721C0E6C5001B1673 /* FoodViewController.swift in Sources */,
@@ -350,8 +369,9 @@
 				AB5386ED21EEF6FA00EA1DD7 /* UserCollectionViewCell.swift in Sources */,
 				AB5386E921EEF64300EA1DD7 /* Error+Extension.swift in Sources */,
 				AB707F4321FF2C8800974C9D /* WalkRecordTableViewCell.swift in Sources */,
-				AB707F3B21FDC29200974C9D /* TestTableViewController.swift in Sources */,
+				AB9D7DBB220074C4000C4CB0 /* AlbumCollectionViewCell.swift in Sources */,
 				AB2B18C521C0E429001B1673 /* AppDelegate.swift in Sources */,
+				AB9D7DB822007333000C4CB0 /* Album.swift in Sources */,
 				AB2B18D921C0E6F3001B1673 /* WalkViewController.swift in Sources */,
 				AB3EE95421EEECC90018CCED /* User.swift in Sources */,
 			);
